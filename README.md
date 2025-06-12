@@ -3,7 +3,7 @@ Forecasting household electric power consumption using machine learning techniqu
 
 # ⚡ Household Power Consumption Forecasting using Machine Learning
 
-This project focuses on forecasting household electric power consumption using machine learning techniques, particularly time-series modeling. We use the [UCI Household Electric Power Consumption Dataset](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption) to explore, model, and compare various forecasting algorithms, including PyCaret’s built-in models.
+This project focuses on forecasting household electric power consumption using machine learning techniques, particularly time-series modeling. We use the [UCI Household Electric Power Consumption Dataset](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption) to explore, model, and compare various forecasting algorithms.
 
 ## 📊 Problem Statement
 Accurate energy consumption forecasting is crucial for smarter electricity usage, demand planning, and optimizing grid operations. In this project, we aim to predict future values of **Global Active Power** by leveraging historical consumption data, uncovering temporal patterns and evaluating multiple machine learning models to identify the best-performing ones.
@@ -13,7 +13,7 @@ Accurate energy consumption forecasting is crucial for smarter electricity usage
 
 ├── notebooks/
 
-│ └── time_series_modeling.ipynb # Main Colab notebook
+│ └── EDA.ipynb # Main Colab notebook
 
 ├── models/
 
@@ -34,18 +34,15 @@ Accurate energy consumption forecasting is crucial for smarter electricity usage
 
 The following time-series models were evaluated using PyCaret:
 
+- Linear Regression
 - ARIMA
-- ETS
-- LightGBM
+- Xgboost
 - CatBoost
-- Ridge Regression
-- ElasticNet
-- Random Forest
-- KNN
-- Prophet
-- Gradient Boosting Regressor
+- LSTM
+- ConvLSTM
+- GRU
 
-Each model was assessed on performance metrics such as **MAE**, **RMSE**, and **R²**.
+Each model was assessed on performance metrics such as **MAE**, **MSE**, **RMSE**, **MAPE** and **R²**.
 
 ## 📌 Key Features
 
